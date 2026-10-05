@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Payment Fraud Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Digital Payment Fraud Detection</h1>
+
+        <p class="subtitle">
+            Machine Learning Based Fraud Detection System
+        </p>
+
+        <div class="card">
+
+            <label>Transaction Amount</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+
+            <label>Transaction Type</label>
+            <select id="type">
+                <option value="online">Online Payment</option>
+                <option value="upi">UPI</option>
+                <option value="card">Card Payment</option>
+            </select>
+
+            <label>Transaction Location</label>
+            <input type="text" id="location" placeholder="Enter location">
+
+            <button onclick="checkTransaction()">
+                Check Transaction
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
